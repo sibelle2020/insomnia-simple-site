@@ -18,7 +18,7 @@ getdata();
 function showPosts(posts) {
   console.log(posts);
   //grab the template
-  const template = document.querySelector(".frontpage-list").content;
+  const template = document.querySelector("#frontpage-list").content;
 
   posts.forEach((post) => {
     console.log(post);
@@ -27,14 +27,12 @@ function showPosts(posts) {
     const copy = template.cloneNode(true);
 
     //adjust stuff
-    template.querySelector("h2").textContent = post.title;
-    template.querySelector("h3").textContent = `by ${post.username}`;
-    template.querySelector(
-      "a.readmore"
-    ).href = `article.html?article=${post._id}`;
-    template.querySelector("a.readmore").textContent = `Read More`;
+    copy.querySelector("h2").textContent = post.title;
+    copy.querySelector("h3").textContent = `by ${post.username}`;
+    copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
+    copy.querySelector("a.readmore").textContent = `Read More`;
 
     //append
-    document.querySelector("main").appendChild(copy);
+    document.querySelector(".post-wrapper").appendChild(copy);
   });
 }

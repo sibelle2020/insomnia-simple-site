@@ -45,3 +45,21 @@ header {
 .navlink:hover {
   color: lightcoral;
 }
+
+/* MAIN STYLING -------------------------------------------------------------->*/
+
+main {
+  margin: 2rem;
+}
+
+/* FRONT PAGE POSTS LIST --------------------------------------------------->*/
+
+.post-article {
+  border: 0.5px solid;
+  padding: 2rem;
+  mar
+}
+
+.post-wrapper {
+  padding: 2rem;
+}
