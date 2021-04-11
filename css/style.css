@@ -66,12 +66,10 @@ header {
   padding: 2rem;
   padding-bottom: 3rem;
   margin: 2rem;
-  /*box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.48);*/
-  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.29);
+  border-bottom: 2px solid #916f69;
 }
 
 .post-wrapper {
@@ -80,6 +78,11 @@ header {
 
 .post-title-front {
   font-weight: bold;
+  font-size: 2rem;
+}
+
+.summary {
+  font-style: italic;
 }
 
 .readmore-button {

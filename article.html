@@ -50,6 +50,44 @@
           </section>
        </div>
       </article>
+
+      <form name="comment-form" method="POST" class="comment-form">
+        <p class="comment-intro">
+          Share your own comment on this post
+        </p>
+
+        <div class="form-elements">
+          <label for="comment-content"></label>
+          <textarea
+            name="content"
+            id="comment-content"
+            placeholder="Write your comment here"
+            required
+          ></textarea>
+
+          <label for="comment-username"
+            >Username</label
+          >
+          <input
+            type="text"
+            name="username"
+            id="comment-username"
+            placeholder="Enter your username here"
+            required
+          />
+
+          <label for="comment-email">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            id="comment-email"
+            placeholder="Enter your email here"
+            required
+          />
+
+          <input type="submit" value="submit comment" class="comment-button" />
+        </div>
+      </form>
     </main>
     <script src="js/article.js"></script>
   </body>
