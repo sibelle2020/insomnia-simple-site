@@ -36,7 +36,9 @@ function showPosts(posts) {
     ).href = `article.html?article=${post._id}`;
     copy.querySelector(".readmore-button span").textContent = `Read More`;
 
-    //append
-    document.querySelector(".post-wrapper").appendChild(copy);
+    if (post.approved == true) {
+      //append
+      document.querySelector(".post-wrapper").appendChild(copy);
+    }
   });
 }
