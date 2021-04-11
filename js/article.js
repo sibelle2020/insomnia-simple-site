@@ -43,3 +43,34 @@ function showPost(data) {
     document.querySelector(".comment-list-wrapper").appendChild(copy);
   });
 }
+
+const form = document.querySelector(".comment-form");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const payload = {
+    username: form.elements.username.value,
+    email: form.elements.email.value,
+    content: form.elements.content.value,
+    date: Date.now(),
+  };
+
+  fetch(`https://s21kea-d06b.restdb.io/rest/posts/${articleId}/comments`, {
+    method: "POST",
+    headers: {
+      "x-apikey": "6033bd605ad3610fb5bb64f6",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      const template = document.querySelector("#comments-template").content;
+      const copy = template.cloneNode(true);
+      copy.querySelector(".comment-username").textContent = data.username;
+      copy.querySelector(".comment-content").textContent = data.content;
+      document.querySelector(".comment-list-wrapper").appendChild(copy);
+    });
+}

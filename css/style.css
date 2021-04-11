@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
 * {
   margin: 0;
@@ -27,7 +29,17 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 8rem;
-  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  font-size: 5vw;
+  font-style: normal;
+  font-family: "New Tegomin", serif;
+}
+
+.sublogo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vw;
+  font-style: normal;
 }
 
 .navbar {
@@ -99,25 +111,18 @@ header {
 .readmore-link img {
   max-width: 70px;
   padding-right: 1rem;
-  transform: scaleX(-1)
+  transform: scaleX(-1);
 }
 
 .readmore-button span:hover {
   color: #916f69;
 }
 
-/*.readmore-button {
-  cursor: pointer;
-  color: white;
-  background-color: #33261e;
-  border: none;
-  padding: 15px;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 7.5vw;
+  }
+  .sublogo {
+    font-size: 2.5vw;
+  }
 }
-
-.readmore-button:hover {
-  background-color: #916f69;
-  transition: 0.3s;
-}'/
