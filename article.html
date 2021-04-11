@@ -40,16 +40,18 @@
       <article class="comments-wrapper">
         <h3 class="comments-intro">Comments</h3>
         <div class="comment-list-wrapper">
-          <section class="comments-article">
-          <h4 class="comment-username">AllisJ95</h3>
-          <p class="comment-content">
-            Such a lovely and thoughtful post. I can realte to your way of
-            thinking in many ways!
-          </p>
-          <p class="comment-date">11/04/2021 - 07.16 pm</p>
-          </section>
+          <template id="comments-template">
+            <section class="comments-article">
+              <h4 class="comment-username">AllisJ95</h3>
+              <p class="comment-content">
+                Such a lovely and thoughtful post. I can realte to your way of
+                thinking in many ways!
+              </p>
+              <p class="comment-date">11/04/2021 - 07.16 pm</p>
+              </section>
+          </template>
        </div>
-       
+
        <form name="comment-form" method="POST" class="comment-form">
         <p class="comment-intro">
           Share your own comment on this post
