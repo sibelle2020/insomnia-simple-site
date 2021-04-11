@@ -28,10 +28,11 @@ function showPosts(posts) {
 
     //adjust stuff
     template.querySelector("h2").textContent = post.title;
-    template.querySelector("h3 span").textContent = post.username;
+    template.querySelector("h3").textContent = `by ${post.username}`;
     template.querySelector(
-      ".readmore"
-    ).href = `article.html?article=${post_id}`;
+      "a.readmore"
+    ).href = `article.html?article=${post._id}`;
+    template.querySelector("a.readmore").textContent = `Read More`;
 
     //append
     document.querySelector("main").appendChild(copy);
