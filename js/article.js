@@ -18,7 +18,7 @@ fetch("https://s21kea-d06b.restdb.io/rest/posts/" + articleId, {
 function showPost(data) {
   console.log(data);
 
-  document.querySelector("h1").textContent = data.title;
-  document.querySelector("h2").textContent = `by ${data.username}`;
+  document.querySelector(".title-post").textContent = data.title;
+  document.querySelector(".author-post").textContent = `by ${data.username}`;
   document.querySelector("p").textContent = data.content;
 }

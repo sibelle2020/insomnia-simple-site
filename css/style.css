@@ -1,3 +1,47 @@
-.frontpage-list {
-  display: none;
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER STYLING + NAVBAR ------------------------------------------------->*/
+
+header {
+  display: block;
+}
+
+.logo {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.navbar {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+.navlink:hover {
+  color: lightcoral;
 }
