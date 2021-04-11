@@ -1,0 +1,83 @@
+.main-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-form {
+  background-color: whitesmoke;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
+}
+
+.form-title {
+  font-weight: 400;
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  font-family: "Zilla Slab Highlight", cursive;
+}
+
+.form-description {
+  padding-bottom: 2rem;
+}
+
+#post-title {
+  border: none;
+  background-color: white;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#post-username {
+  border: none;
+  background-color: white;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#post-content {
+  border: none;
+  background-color: white;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.submit-button {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
+  font-size: 1.1rem;
+}
+
+.submit-button:hover {
+  background-color: lightcoral;
+  transition: 0.3s;
+}
+
+/* RESPONSIVENESS ------------------------------------------------------------>*/
+
+@media (max-width: 1200px) {
+  .submit-form {
+    width: 80%;
+  }
+}

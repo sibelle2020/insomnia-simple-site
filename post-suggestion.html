@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/post-suggestion.css" />
   </head>
   <body>
     <header>
@@ -21,11 +22,13 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="logo">The Writing Room</h1>
+    <main class="main-submit">
       <form name="submit-story" method="POST" class="submit-form">
-        <h2 class="form-title"></h2>
-        <p class="form-description"></p>
+        <h2 class="form-title">Share your own post!</h2>
+        <p class="form-description">
+          Here you can write and submit your own post. <br />
+          We will share your post to our site once it has been approved!
+        </p>
         <div class="form-elements">
           <label for="post-title">Title</label>
           <input
@@ -53,7 +56,7 @@
             required
           ></textarea>
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" class="submit-button" />
         </div>
       </form>
     </main>
