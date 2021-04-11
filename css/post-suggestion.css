@@ -78,6 +78,16 @@ label span {
   transition: 0.3s;
 }
 
+.thankyou {
+  padding-bottom: 1rem;
+  color: lightcoral;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
 /* RESPONSIVENESS ------------------------------------------------------------>*/
 
 @media (max-width: 1200px) {

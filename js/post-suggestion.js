@@ -27,6 +27,12 @@ form.addEventListener("submit", (e) => {
   })
     .then((response) => {
       console.log(response);
+
+      document.querySelector("input[type=submit]").disabled = false;
+      form.elements.title.value = "";
+      form.elements.username.value = "";
+      form.elements.content.value = "";
+      document.querySelector("p.thankyou").classList.remove("hidden");
     })
     .catch((err) => {
       console.error(err);
