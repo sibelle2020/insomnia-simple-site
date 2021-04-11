@@ -16,10 +16,8 @@
 }
 
 .form-title {
-  font-weight: 400;
   font-size: 3rem;
   padding-bottom: 0.5rem;
-  font-family: "Zilla Slab Highlight", cursive;
 }
 
 .form-description {
@@ -60,7 +58,7 @@ label {
 .submit-button {
   cursor: pointer;
   color: white;
-  background-color: black;
+  background-color: #33261e;
   border: none;
   padding: 15px;
   text-transform: uppercase;
@@ -70,7 +68,7 @@ label {
 }
 
 .submit-button:hover {
-  background-color: lightcoral;
+  background-color: #916f69;
   transition: 0.3s;
 }
 

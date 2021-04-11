@@ -24,8 +24,6 @@ header {
 }
 
 .logo {
-  font-family: "Zilla Slab Highlight", cursive;
-  font-weight: 400;
   display: flex;
   justify-content: center;
   padding-top: 8rem;
@@ -36,7 +34,7 @@ header {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   padding: 1rem;
-  background-color: black;
+  background-color: #33261e;
   box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
   width: 100%;
 }
@@ -57,7 +55,7 @@ header {
 }
 
 .navlink:hover {
-  color: lightcoral;
+  color: #916f69;
 }
 
 /* MAIN STYLING -------------------------------------------------------------->*/
@@ -87,7 +85,7 @@ header {
 .readmore-button {
   cursor: pointer;
   color: white;
-  background-color: black;
+  background-color: #33261e;
   border: none;
   padding: 15px;
   text-transform: uppercase;
@@ -96,6 +94,6 @@ header {
 }
 
 .readmore-button:hover {
-  background-color: lightcoral;
+  background-color: #916f69;
   transition: 0.3s;
 }

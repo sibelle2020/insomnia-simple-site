@@ -20,5 +20,5 @@ function showPost(data) {
 
   document.querySelector(".title-post").textContent = data.title;
   document.querySelector(".author-post").textContent = `by ${data.username}`;
-  document.querySelector("p").textContent = data.content;
+  document.querySelector("p.content-post").textContent = data.content;
 }
