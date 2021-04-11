@@ -27,10 +27,12 @@ function showPosts(posts) {
     const copy = template.cloneNode(true);
 
     //adjust stuff
-    copy.querySelector("h2").textContent = post.title;
-    copy.querySelector("h3").textContent = `by ${post.username}`;
+    copy.querySelector("h2.post-title-front").textContent = post.title;
+    copy.querySelector(
+      "h3.post-author-front"
+    ).textContent = `by ${post.username}`;
     copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
-    copy.querySelector("a.readmore").textContent = `Read More`;
+    copy.querySelector(".readmore-button").textContent = `Read More`;
 
     //append
     document.querySelector(".post-wrapper").appendChild(copy);
