@@ -4,21 +4,39 @@
   align-items: center;
 }
 
+.return-button {
+  margin-bottom: 2rem;
+}
+
+.return-link {
+  text-decoration: none;
+  color: #33261e;
+  text-transform: uppercase;
+}
+
+.return-link img {
+  max-width: 70px;
+  padding-right: 1rem;
+}
+
+.return-button:hover {
+  transform: scale(1.01);
+}
+
 .submit-form {
-  background-color: whitesmoke;
   width: 60%;
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
-  box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
 }
 
 .form-title {
   font-size: 3rem;
   padding-bottom: 0.5rem;
   font-weight: 700;
+  color: #33261e;
 }
 
 .form-description {
@@ -27,7 +45,7 @@
 
 #post-title {
   border: none;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.5rem;
@@ -36,7 +54,7 @@
 
 #post-username {
   border: none;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.5rem;
@@ -45,7 +63,7 @@
 
 #post-content {
   border: none;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.5rem;

@@ -31,8 +31,10 @@ function showPosts(posts) {
     copy.querySelector(
       "h3.post-author-front"
     ).textContent = `by ${post.username}`;
-    copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
-    copy.querySelector(".readmore-button").textContent = `Read More`;
+    copy.querySelector(
+      "a.readmore-link"
+    ).href = `article.html?article=${post._id}`;
+    copy.querySelector(".readmore-button span").textContent = `Read More`;
 
     //append
     document.querySelector(".post-wrapper").appendChild(copy);

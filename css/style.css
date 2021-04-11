@@ -83,9 +83,30 @@ header {
 
 .summary {
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
-.readmore-button {
+.readmore-link {
+  text-decoration: none;
+  color: #33261e;
+  text-transform: uppercase;
+}
+
+.readmore-link span {
+  margin-left: 1rem;
+}
+
+.readmore-link img {
+  max-width: 70px;
+  padding-right: 1rem;
+  transform: scaleX(-1)
+}
+
+.readmore-button span:hover {
+  color: #916f69;
+}
+
+/*.readmore-button {
   cursor: pointer;
   color: white;
   background-color: #33261e;
@@ -99,4 +120,4 @@ header {
 .readmore-button:hover {
   background-color: #916f69;
   transition: 0.3s;
-}
+}'/
