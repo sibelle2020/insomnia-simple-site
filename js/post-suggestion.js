@@ -10,10 +10,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const payload = {
-      title: form.elements.title.value,
-      username: form.elements.username.value,
-      content: form.elements.content.value;
-  }
+    title: form.elements.title.value,
+    username: form.elements.username.value,
+    content: form.elements.content.value,
+  };
 
   document.querySelector("input[type=submit]").disabled = true;
 
@@ -23,8 +23,7 @@ form.addEventListener("submit", (e) => {
       "x-apikey": "6033bd605ad3610fb5bb64f6",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(payload), 
-      
+    body: JSON.stringify(payload),
   })
     .then((response) => {
       console.log(response);
