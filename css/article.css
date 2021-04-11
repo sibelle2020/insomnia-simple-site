@@ -1,3 +1,93 @@
 .article-main {
-  margin: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 8rem;
+}
+
+.return-button {
+  margin-bottom: 4rem;
+}
+
+.return-link {
+  text-decoration: none;
+  color: #33261e;
+  text-transform: uppercase;
+}
+
+.return-link img {
+  max-width: 70px;
+  padding-right: 1rem;
+}
+
+.return-button:hover {
+  transform: scale(1.01);
+}
+
+.article-post {
+  border-bottom: 2px solid #916f69;
+}
+
+.title-post {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.author-post {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.content-post {
+  padding-bottom: 2rem;
+}
+
+/* COMMENTS STYLING ---------------------------------------------------------->*/
+
+.comments-wrapper {
+  margin-top: 4rem;
+  margin-left: 5rem;
+  padding-bottom: 5rem;
+}
+
+.comments-intro {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.comments-article {
+  background-color: whitesmoke;
+  padding: 1rem;
+  width: 50%;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.29);
+  position: absolute;
+}
+
+.comment-username {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  color: #33261e;
+}
+
+.comment-content {
+  padding-bottom: 0.5rem;
+  color: #33261e;
+}
+
+.comment-date {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #33261e;
+}
+
+/* RESPONSIVENESS ------------------------------------------------------------>*/
+
+@media (max-width: 1200px) {
+  .comments-article {
+    width: 70%;
+  }
+
+  .comments-wrapper {
+    margin-left: 2rem;
+  }
 }
