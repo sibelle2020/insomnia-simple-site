@@ -9,10 +9,18 @@
   font-weight: 400;
 }
 
+input,
+textarea,
+label {
+  display: block;
+}
+
 /* HEADER STYLING + NAVBAR ------------------------------------------------->*/
 
 header {
-  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .logo {
@@ -20,7 +28,8 @@ header {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  padding-top: 2.5rem;
+  padding-top: 8rem;
+  font-size: 3rem;
 }
 
 .navbar {
@@ -29,6 +38,7 @@ header {
   padding: 1rem;
   background-color: black;
   box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.44);
+  width: 100%;
 }
 
 .nav-ul {
@@ -52,10 +62,6 @@ header {
 
 /* MAIN STYLING -------------------------------------------------------------->*/
 
-main {
-  margin: 2rem;
-}
-
 /* FRONT PAGE POSTS LIST --------------------------------------------------->*/
 
 .post-article {
@@ -63,10 +69,11 @@ main {
   padding-bottom: 3rem;
   margin: 2rem;
   /*box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.48);*/
-  border-bottom: 2px solid black;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.29);
 }
 
 .post-wrapper {

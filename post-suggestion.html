@@ -20,7 +20,44 @@
           <li class="nav-li"><a href="#" class="navlink">contact</a></li>
         </ul>
       </nav>
-      <h1 class="logo">The Writing Room</h1>
     </header>
+    <main>
+      <h1 class="logo">The Writing Room</h1>
+      <form name="submit-story" method="POST" class="submit-form">
+        <h2 class="form-title"></h2>
+        <p class="form-description"></p>
+        <div class="form-elements">
+          <label for="post-title">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="post-title"
+            placeholder="Enter the title of your shortstory here"
+            required
+          />
+
+          <label for="post-username">Your Username</label>
+          <input
+            type="text"
+            name="username"
+            id="post-username"
+            placeholder="Enter the name you would like to release your shortstory under"
+            required
+          />
+
+          <label for="post-content">The Story</label>
+          <textarea
+            name="content"
+            id="post-content"
+            placeholder="Write your shortstory here"
+            required
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+
+    <script src="js/post-suggestion.js"></script>
   </body>
 </html>
